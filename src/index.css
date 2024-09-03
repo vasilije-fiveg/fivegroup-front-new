@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Roboto", sans-serif !important;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #18151d; /* Dark background color */
+  background-image: url("../public/assets/sjaj\ -\ Copy.png"); /* Background image */
+  background-repeat: no-repeat; /* Ensure the image does not repeat */
+  font-family: "Roboto", sans-serif !important; /* Font settings */
+  background-position: center top 0px;
+  animation: moveBackgroundUpDown 3s ease-in-out infinite alternate; /* Apply animation */
+}
+
+/* Media query to remove animation on small screens */
+@media (max-width: 639px) {
+  body {
+    background-image: none; /* Remove animation on screens smaller than 640px */
+  }
+}
+
+@keyframes moveBackgroundUpDown {
+  0% {
+    background-position: center top 0px;
+  }
+  100% {
+    background-position: center top -50px;
+  }
+}
+
+.cutted-card {
+  background-image: url("../public/assets/1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  padding: 30px;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.vr-armory {
+  background-image: url("../public/assets/sjaj.png");
+  background-position: center bottom; /* Start at center bottom */
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: moveBackground 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: center bottom; /* Start position */
+  }
+  100% {
+    background-position: center bottom 10px; /* End position */
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.asteroid {
+  animation: float 30s linear infinite;
+}
+
+.footer {
+  background-image: url("../public/assets/sjaj\ -\ Copy\ \(2\).png");
+  background-repeat: no-repeat;
+  background-position: center bottom -100px;
+  animation: moveFooterBackground 3s ease-in-out infinite alternate; /* Apply animation */
+}
+@keyframes moveFooterBackground {
+  0% {
+    background-position: center bottom -80px;
+  }
+  100% {
+    background-position: center bottom -150px; /* End position */
+  }
+}
+
+.video-overlay {
+  background-image: url("../public//assets//fiveglogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
+}
