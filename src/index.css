@@ -14,7 +14,7 @@
 
 body {
   background-color: #18151d; /* Dark background color */
-  background-image: url("../public/assets/sjaj\ -\ Copy.png"); /* Background image */
+  background-image: url("../public/assets/sjaj-top.png"); /* Background image */
   background-repeat: no-repeat; /* Ensure the image does not repeat */
   font-family: "Roboto", sans-serif !important; /* Font settings */
   background-position: center top 0px;
@@ -83,7 +83,7 @@ body {
 }
 
 .footer {
-  background-image: url("../public/assets/sjaj\ -\ Copy\ \(2\).png");
+  background-image: url("../public/assets/sjaj-bottom.png");
   background-repeat: no-repeat;
   background-position: center bottom -100px;
   animation: moveFooterBackground 3s ease-in-out infinite alternate; /* Apply animation */
